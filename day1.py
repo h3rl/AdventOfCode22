@@ -30,7 +30,7 @@ def part_b(data):
 
 
 def main():
-    test_data = ("""\
+    test_data = parseAOC_test("""\
 1000
 2000
 3000
@@ -45,7 +45,7 @@ def main():
 9000
 
 10000
-""").split("\n")
+""")
     data = parseAOC("./day1.txt")
 
     assert part_a(test_data) == 24000
