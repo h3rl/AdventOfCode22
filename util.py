@@ -9,12 +9,15 @@ ALPHABETH = "abcdefghijklmnopqrstuvwxyz"
 
 def parseAOC(path: str) -> list:
     data = readFile(path)
+    if len(data) == 1:
+        return data[0]
     return data
 
 
-def parseAOC_test(data):
+def parseAOC_test(data, removeempty=False):
     test_data = data.split("\n")
-    test_data = removeEmpty(test_data)
+    if removeempty:
+        test_data = removeEmpty(test_data)
     return test_data
 
 
