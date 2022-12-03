@@ -5,6 +5,8 @@ from collections import deque
 from urllib.request import urlopen
 
 ALPHABETH = "abcdefghijklmnopqrstuvwxyz"
+ALPHABETH_UPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+ALPHABETH_FULL = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 
 def parseAOC(path: str) -> list:
