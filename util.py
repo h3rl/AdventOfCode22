@@ -18,6 +18,10 @@ def parseAOC(path: str) -> list:
 
 def parseAOC_test(data, removeempty=False):
     test_data = data.split("\n")
+
+    if test_data[-1] == "":
+        test_data.pop()
+
     if removeempty:
         test_data = removeEmpty(test_data)
     return test_data
