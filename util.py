@@ -125,3 +125,7 @@ def cleanraw(lines):
 def strToIntList(arr: list):
     result = [int(intarray) for intarray in arr]
     return result
+
+def allUnique(x):
+    seen = set()
+    return not any(i in seen or seen.add(i) for i in x)
